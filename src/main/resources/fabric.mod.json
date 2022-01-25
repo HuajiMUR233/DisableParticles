@@ -1,38 +1,30 @@
 {
   "schemaVersion": 1,
-  "id": "modid",
+  "id": "disparticles",
   "version": "${version}",
 
-  "name": "Example Mod",
-  "description": "This is an example description! Tell everyone what your mod is about!",
+  "name": "Disable Particles",
+  "description": "Just a Carpet addition",
   "authors": [
-    "Me!"
+    "Huaji_MUR233"
   ],
   "contact": {
-    "homepage": "https://fabricmc.net/",
-    "sources": "https://github.com/FabricMC/fabric-example-mod"
+    "homepage": "https://github.com/HuajiMUR233/DisableParticles",
+    "sources": "https://github.com/HuajiMUR233/DisableParticles"
   },
 
   "license": "CC0-1.0",
   "icon": "assets/modid/icon.png",
 
-  "environment": "*",
-  "entrypoints": {
-    "main": [
-      "net.fabricmc.example.ExampleMod"
-    ]
-  },
+  "environment": "server",
   "mixins": [
     "modid.mixins.json"
   ],
 
   "depends": {
     "fabricloader": ">=0.12.12",
-    "fabric": "*",
     "minecraft": "1.18.x",
-    "java": ">=17"
-  },
-  "suggests": {
-    "another-mod": "*"
+    "java": ">=17",
+    "carpet": "*"
   }
 }
